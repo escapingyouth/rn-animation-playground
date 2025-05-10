@@ -43,7 +43,8 @@ export default function App() {
 			<StatusBar style='auto' />
 			<Animated.View
 				onTouchStart={() => {
-					scale.value = withTiming(1.2);
+					// scale.value = withTiming(2, { duration: 1000 });
+					scale.value = withTiming(2);
 				}}
 				onTouchEnd={() => {
 					scale.value = withTiming(1);
